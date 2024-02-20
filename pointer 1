@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(){
+	int num1,num2,sum;
+	int *ip;
+	int *ipp;
+	int *ippp;
+	
+	ip = &sum;
+	ipp = &num1;
+	ippp = &num2;
+	
+	printf("enter the first integer: ");
+	scanf("%d", &num1);
+	printf("enter the second integer: ");
+	scanf("%d", &num2);
+	
+	sum = num1 + num2;
+	
+	printf("The sum of the two numbers is: %d  with the address (%d)\n", *ip, &ip);
+	printf("The value of the first integer is: %d with the address (%d)\n", *ipp, &ipp);
+	printf("The value of the second integer is: %d with the address (%d)\n", *ippp, &ippp);
+}
